@@ -1,25 +1,9 @@
-"use client";
-import { useState, useRef } from "react";
+
 import category from "@/types/category";
 import Image from "next/image";
 
 export default function Category() {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const handleNext = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollLeft += 200; // Adjust the scroll amount as needed
-      setScrollPosition(containerRef.current.scrollLeft);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollLeft -= 200; // Adjust the scroll amount as needed
-      setScrollPosition(containerRef.current.scrollLeft);
-    }
-  };
+  
   return (
     <section className="mt-11 px-7">
       <div className="container mx-auto">
@@ -29,8 +13,7 @@ export default function Category() {
           </h2>
         </div>
         <div
-          ref={containerRef}
-          style={{ scrollLeft: scrollPosition }}
+          
           className="flex w-full transition overflow-x-auto overflow-y-hidden lg:overflow-x-hidden p-4 lg:justify-end gap-4 mt-10"
         >
           {category?.map((e, i) => (
@@ -62,7 +45,7 @@ export default function Category() {
         </div>
         <div className="flex justify-end gap-4 mt-9">
           <button
-            onClick={handlePrevious}
+          
             className="btn-sm bg-primary flex text-white gap-3 justify-center items-center"
           >
             {" "}
@@ -86,7 +69,7 @@ export default function Category() {
             Prev
           </button>
           <button
-            onClick={handleNext}
+           
             className="btn-sm bg-primary flex gap-1 justify-center items-center text-white"
           >
             Next{" "}
