@@ -2,10 +2,10 @@
 
 Pertama Install [Node JS](https://nodejs.org/en/download),
 Kedua Install Npm,
-disini saya menggunakan Yarn
+disini saya menggunakan Yarn,
 ketiga Instal Next JS
 ```bash
-yarn create next-app test-elemes
+yarn create next-app
 # and start development
 yarn dev
 ```
@@ -14,6 +14,7 @@ Buka [http://localhost:3000](http://localhost:3000) dengan browser favorite anda
 ## Tech yang di guanakan
 
 - Next JS 
+- Typescript
 - Tailwindcss
 - Vercel
 - Github
