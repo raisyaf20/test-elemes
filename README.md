@@ -1,7 +1,7 @@
 ## Getting Started
 
-Pertama, Install [Node JS](https://nodejs.org/en/download)
-Kedua, Install Npm
+Pertama Install [Node JS](https://nodejs.org/en/download),
+Kedua Install Npm,
 disini saya menggunakan Yarn
 ketiga Instal Next JS
 ```bash
